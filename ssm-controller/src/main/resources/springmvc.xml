@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 另一种整合方式
+        <import resource="classpath:applicationContext.xml"></import>
+    -->
+    <!--开启注解扫描，只扫描Controller注解-->
+    <context:component-scan base-package="cn.itcast.controller"></context:component-scan>
+
+
+    <!--配置的视图解析器对象-->
+    <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- 配置文件解析器对象，要求id名称必须是multipartResolver -->
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--配置上传文件大小,单位为字节-->
+        <property name="maxUploadSize" value="10485760"/>
+    </bean>
+
+
+    <!--配置静态资源不过滤-->
+    <mvc:resources location="/css/" mapping="/css/**" />
+    <mvc:resources location="/images/" mapping="/images/**" />
+    <mvc:resources location="/js/" mapping="/js/**" />
+    <!--
+    开启后先找DispatcherServlet中是否有映射,如果没有则查找静态资源
+    过滤所有资源
+    <mvc:default-servlet-handler/>
+    -->
+
+
+    <!-- 开启SpringMVC框架注解的支持 -->
+    <!-- 使用该标签会自动配置处理器映射器和处理器适配器-->
+    <!-- 自定义类型转换器需要通过conversion-service属性来启用-->
+    <mvc:annotation-driven />
+
+</beans>
