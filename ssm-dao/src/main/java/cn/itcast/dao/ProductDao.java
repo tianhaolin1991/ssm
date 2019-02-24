@@ -1,7 +1,6 @@
 package cn.itcast.dao;
 
 import cn.itcast.domain.Product;
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 

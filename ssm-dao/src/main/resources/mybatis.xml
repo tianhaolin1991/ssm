@@ -12,6 +12,7 @@
         <!--开启⼆级缓存-->
         <setting name="cacheEnabled" value="true"/>
     </settings>
+
     <!--对JavaBean设置别名-->
     <typeAliases>
         <package name="cn.itcast.domain" />
@@ -20,6 +21,15 @@
         alias="account"></typeAlias>
         -->
     </typeAliases>
+
+    <!--配置分页插件pageHelper-->
+    <plugins>
+        <!-- com.github.pagehelper为PageHelper类所在包名 -->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!-- 使用下面的方式配置参数，后面会有所有的参数介绍 -->
+            <property name="helperDialect" value="oracle"/>
+        </plugin>
+    </plugins>
 
     <!--配置环境-->
     <environments default="mysql">
@@ -31,4 +41,5 @@
         </environment>
     </environments>
     <!--配置映射:在applicationContext中配置MapperScannerConfigurer-->
+
 </configuration>

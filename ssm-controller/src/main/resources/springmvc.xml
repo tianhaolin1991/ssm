@@ -38,8 +38,6 @@
         <property name="maxUploadSize" value="10485760"/>
     </bean>
 
-    <!--配置异常处理器-->
-    <bean class="cn.itcast.exception.SysExceptionResolver" id="sysExceptionResolver"/>
 
     <!--配置静态资源不过滤-->
     <mvc:resources location="/css/" mapping="/css/**" />

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itcast.dao.OrderDao">
+
+    <!--<resultMap id="orderMap" type="order">
+        <id property="id" column="id" />
+        <result property="orderNum" column="orderNum"/>
+        <result property="orderTime" column="orderTime"/>
+        <result property="orderTimeStr" column="orderTimeStr"/>
+        <result property="orderStatus" column="ordorderStatuserNum"/>
+        <result property="peopleCount" column="peopleCount"/>
+        <result property="member" column="member"/>
+        <result property="payType" column="payType"/>
+        <result property="payTypeStr" column="payTypeStr"/>
+        <result property="orderDesc" column="orderDesc"/>
+        <association property="product" column="product" javaType="product">
+            <
+        </association>
+    </resultMap>-->
+    <select id="findAll" resultType="order">
+        SELECT * FROM orders
+    </select>
+</mapper>

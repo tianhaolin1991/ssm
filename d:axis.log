@@ -1235,3 +1235,1128 @@ Caused by: java.lang.ClassNotFoundException: org.apache.commons.fileupload.FileI
 2019-02-24 12:55:12,502 1601   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 12:55:11 CST 2019]; parent: Root WebApplicationContext
 2019-02-24 12:55:12,553 1652   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 593 ms
 2019-02-24 12:56:00,314 49413  [bio-8080-exec-4] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18a8eme1fuhily|361667ed, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18a8eme1fuhily|361667ed, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 13:40:15,103 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 13:40:15,147 44     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 13:40:15 CST 2019]; root of context hierarchy
+2019-02-24 13:40:15,178 75     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 13:40:15,322 219    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 13:40:15,347 244    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 13:40:15,607 504    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 13:40:15,838 735    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 13:40:15,864 761    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 13:40:16,355 1252   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1250 ms
+2019-02-24 13:40:16,426 1323   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 13:40:16,429 1326   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 13:40:16 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 13:40:16,429 1326   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 13:40:16,555 1452   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 13:40:16,827 1724   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 13:40:16,854 1751   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 13:40:16,857 1754   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 13:40:16,860 1757   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 13:40:16,913 1810   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 13:40:16,914 1811   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 13:40:16,915 1812   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 13:40:17,251 2148   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 13:40:16 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 13:40:17,305 2202   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 13:40:16 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 13:40:17,463 2360   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 1036 ms
+2019-02-24 13:41:00,029 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 13:41:00,074 45     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 13:41:00 CST 2019]; root of context hierarchy
+2019-02-24 13:41:00,109 80     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 13:41:00,185 156    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 13:41:00,210 181    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 13:41:00,551 522    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 13:41:00,779 750    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 13:41:00,800 771    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 13:41:01,250 1221   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1220 ms
+2019-02-24 13:41:01,315 1286   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 13:41:01,318 1289   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 13:41:01 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 13:41:01,318 1289   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 13:41:01,448 1419   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 13:41:01,723 1694   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 13:41:01,749 1720   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 13:41:01,752 1723   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 13:41:01,756 1727   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 13:41:01,810 1781   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 13:41:01,811 1782   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 13:41:01,812 1783   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 13:41:02,100 2071   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 13:41:01 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 13:41:02,148 2119   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 13:41:01 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 13:41:02,281 2252   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 966 ms
+2019-02-24 13:41:02,590 2561   [bio-8080-exec-1] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18bvbw91ube65j|47268913, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18bvbw91ube65j|47268913, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 16:33:09,919 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:33:09,953 34     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:33:09 CST 2019]; root of context hierarchy
+2019-02-24 16:33:09,976 57     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:33:10,033 114    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:33:10,051 132    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:33:10,327 408    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:33:10,509 590    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:33:10,667 748    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:33:10,845 926    [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+2019-02-24 16:33:10,847 928    [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:522)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:519)
+	... 24 more
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:701)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:372)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1895)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.arrangeCapacity(XMLEntityScanner.java:1761)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipString(XMLEntityScanner.java:1799)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:156)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 27 more
+2019-02-24 16:34:58,388 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:34:58,450 62     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:34:58 CST 2019]; root of context hierarchy
+2019-02-24 16:34:58,475 87     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:34:58,544 156    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:34:58,571 183    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:34:58,826 438    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:34:58,989 601    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:34:59,009 621    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:34:59,223 835    [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+2019-02-24 16:34:59,225 837    [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:522)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:519)
+	... 24 more
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:701)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:372)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1895)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.arrangeCapacity(XMLEntityScanner.java:1761)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipString(XMLEntityScanner.java:1799)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:156)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 27 more
+2019-02-24 16:42:13,289 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:42:13,319 30     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:42:13 CST 2019]; root of context hierarchy
+2019-02-24 16:42:13,341 52     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:42:13,396 107    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:42:13,416 127    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:42:13,702 413    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:42:13,858 569    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:42:14,056 767    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:42:14,231 942    [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+2019-02-24 16:42:14,233 944    [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:522)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:519)
+	... 24 more
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:701)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:372)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1895)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.arrangeCapacity(XMLEntityScanner.java:1761)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipString(XMLEntityScanner.java:1799)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:156)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 27 more
+2019-02-24 16:46:26,546 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:46:26,575 29     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:46:26 CST 2019]; root of context hierarchy
+2019-02-24 16:46:26,597 51     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:46:26,651 105    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:46:26,668 122    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:46:26,868 322    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:46:27,019 473    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:46:27,330 784    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:46:27,593 1047   [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+2019-02-24 16:46:27,594 1048   [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:522)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:519)
+	... 24 more
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:701)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:372)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1895)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.arrangeCapacity(XMLEntityScanner.java:1761)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipString(XMLEntityScanner.java:1799)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:156)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 27 more
+2019-02-24 16:47:45,293 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:47:45,321 28     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:47:45 CST 2019]; root of context hierarchy
+2019-02-24 16:47:45,343 50     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:47:45,395 102    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:47:45,413 120    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:47:45,584 291    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:47:45,724 431    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:47:45,742 449    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:47:45,958 665    [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+2019-02-24 16:47:45,960 667    [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:522)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:519)
+	... 24 more
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:701)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:372)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1895)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.arrangeCapacity(XMLEntityScanner.java:1761)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipString(XMLEntityScanner.java:1799)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:156)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 27 more
+2019-02-24 16:48:39,343 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:48:39,373 30     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:48:39 CST 2019]; root of context hierarchy
+2019-02-24 16:48:39,396 53     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:48:39,450 107    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:48:39,470 127    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:48:39,659 316    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:48:39,814 471    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:48:40,060 717    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:48:40,311 968    [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+2019-02-24 16:48:40,313 970    [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:522)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:519)
+	... 24 more
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:701)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:372)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1895)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.arrangeCapacity(XMLEntityScanner.java:1761)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipString(XMLEntityScanner.java:1799)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:156)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 27 more
+2019-02-24 16:49:05,712 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:49:05,742 30     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:49:05 CST 2019]; root of context hierarchy
+2019-02-24 16:49:05,765 53     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:49:05,819 107    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:49:05,841 129    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:49:06,039 327    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:49:06,195 483    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:49:06,213 501    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:49:06,621 909    [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 908 ms
+2019-02-24 16:49:06,659 947    [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 16:49:06,661 949    [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:49:06 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:49:06,661 949    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 16:49:06,748 1036   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:49:06,894 1182   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 16:49:06,909 1197   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 16:49:06,913 1201   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 16:49:06,918 1206   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 16:49:06,950 1238   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 16:49:06,951 1239   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 16:49:06,952 1240   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 16:49:06,952 1240   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 16:49:07,176 1464   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:49:06 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:49:07,234 1522   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:49:06 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:49:07,303 1591   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 644 ms
+2019-02-24 16:50:10,894 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:50:10,922 28     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:50:10 CST 2019]; root of context hierarchy
+2019-02-24 16:50:10,944 50     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:50:10,998 104    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:50:11,016 122    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:50:11,188 294    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:50:11,328 434    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:50:11,346 452    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:50:11,571 677    [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+2019-02-24 16:50:11,572 678    [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:522)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:519)
+	... 24 more
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:701)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:372)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1895)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.arrangeCapacity(XMLEntityScanner.java:1761)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipString(XMLEntityScanner.java:1799)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:156)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 27 more
+2019-02-24 16:51:42,181 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:51:42,214 33     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:51:42 CST 2019]; root of context hierarchy
+2019-02-24 16:51:42,239 58     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:51:42,300 119    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:51:42,322 141    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:51:42,520 339    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:51:42,668 487    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:51:42,840 659    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:51:43,120 939    [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+2019-02-24 16:51:43,122 941    [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/tianhaolin1991/IdeaProjects/ssm/ssm-dao/target/classes/cn/itcast/dao/OrderDao.class]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:522)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:519)
+	... 24 more
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 2 字节的 UTF-8 序列的字节 2 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:701)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:372)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1895)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.arrangeCapacity(XMLEntityScanner.java:1761)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipString(XMLEntityScanner.java:1799)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:156)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 27 more
+2019-02-24 16:53:17,315 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:53:17,343 28     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:53:17 CST 2019]; root of context hierarchy
+2019-02-24 16:53:17,364 49     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:53:17,419 104    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:53:17,440 125    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:53:17,637 322    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:53:17,797 482    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:53:17,814 499    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:53:18,090 775    [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource classpath:cn.itcast.dao.OrderDao
+2019-02-24 16:53:18,092 777    [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource classpath:cn.itcast.dao.OrderDao
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource classpath:cn.itcast.dao.OrderDao
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:499)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource classpath:cn.itcast.dao.OrderDao
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:493)
+	... 24 more
+Caused by: java.io.IOException: Could not find resource classpath:cn.itcast.dao.OrderDao
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 26 more
+2019-02-24 16:55:34,743 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:55:34,773 30     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:55:34 CST 2019]; root of context hierarchy
+2019-02-24 16:55:34,796 53     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:55:34,849 106    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:55:34,866 123    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:55:35,047 304    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:55:35,190 447    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:55:35,402 659    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:55:35,624 881    [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource classpath:cn/itcast/dao/OrderDao
+2019-02-24 16:55:35,625 882    [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource classpath:cn/itcast/dao/OrderDao
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource classpath:cn/itcast/dao/OrderDao
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:499)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource classpath:cn/itcast/dao/OrderDao
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:493)
+	... 24 more
+Caused by: java.io.IOException: Could not find resource classpath:cn/itcast/dao/OrderDao
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 26 more
+2019-02-24 16:56:12,444 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:56:12,473 29     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:56:12 CST 2019]; root of context hierarchy
+2019-02-24 16:56:12,495 51     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:56:12,548 104    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:56:12,568 124    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:56:12,750 306    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:56:12,909 465    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:56:12,928 484    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:56:13,320 876    [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 876 ms
+2019-02-24 16:56:13,358 914    [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 16:56:13,359 915    [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:56:13 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:56:13,360 916    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 16:56:13,442 998    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:56:13,570 1126   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 16:56:13,583 1139   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 16:56:13,587 1143   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 16:56:13,590 1146   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 16:56:13,620 1176   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 16:56:13,621 1177   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 16:56:13,621 1177   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 16:56:13,622 1178   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 16:56:13,792 1348   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:56:13 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:56:13,826 1382   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:56:13 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:56:13,884 1440   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 526 ms
+2019-02-24 16:56:25,568 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:56:25,597 29     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:56:25 CST 2019]; root of context hierarchy
+2019-02-24 16:56:25,618 50     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:56:25,672 104    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:56:25,692 124    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:56:25,860 292    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:56:26,018 450    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:56:26,039 471    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:56:26,442 874    [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 873 ms
+2019-02-24 16:56:26,472 904    [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 16:56:26,474 906    [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:56:26 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:56:26,474 906    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 16:56:26,545 977    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:56:26,678 1110   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 16:56:26,691 1123   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 16:56:26,694 1126   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 16:56:26,696 1128   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 16:56:26,726 1158   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 16:56:26,727 1159   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 16:56:26,728 1160   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 16:56:26,728 1160   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 16:56:26,918 1350   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:56:26 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:56:26,957 1389   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:56:26 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:56:27,015 1447   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 543 ms
+2019-02-24 16:56:38,619 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:56:38,647 28     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:56:38 CST 2019]; root of context hierarchy
+2019-02-24 16:56:38,669 50     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:56:38,720 101    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:56:38,737 118    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:56:38,902 283    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:56:39,044 425    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:56:39,062 443    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:56:39,416 797    [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 796 ms
+2019-02-24 16:56:39,447 828    [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 16:56:39,448 829    [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:56:39 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:56:39,448 829    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 16:56:39,521 902    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:56:39,643 1024   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 16:56:39,656 1037   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 16:56:39,659 1040   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 16:56:39,662 1043   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 16:56:39,688 1069   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 16:56:39,690 1071   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 16:56:39,690 1071   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 16:56:39,690 1071   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 16:56:39,863 1244   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:56:39 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:56:39,897 1278   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:56:39 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:56:39,951 1332   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 504 ms
+2019-02-24 16:57:10,221 31602  [bio-8080-exec-3] WARN  ework.web.servlet.PageNotFound  - No mapping found for HTTP request with URI [/all-elements-general.html] in DispatcherServlet with name 'dispatcherServlet'
+2019-02-24 16:59:11,295 152676 [bio-8080-exec-8] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18iux75146dbi8|2af9d4ce, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18iux75146dbi8|2af9d4ce, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 16:59:54,145 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 16:59:54,196 51     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 16:59:54 CST 2019]; root of context hierarchy
+2019-02-24 16:59:54,238 93     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 16:59:54,324 179    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 16:59:54,354 209    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 16:59:54,624 479    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:59:54,898 753    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 16:59:54,999 854    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 16:59:55,511 1366   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1365 ms
+2019-02-24 16:59:55,576 1431   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 16:59:55,579 1434   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:59:55 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:59:55,579 1434   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 16:59:55,702 1557   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 16:59:55,980 1835   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 16:59:56,006 1861   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 16:59:56,010 1865   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 16:59:56,013 1868   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 16:59:56,066 1921   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 16:59:56,068 1923   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 16:59:56,068 1923   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 16:59:56,068 1923   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 16:59:56,370 2225   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:59:55 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:59:56,425 2280   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 16:59:55 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 16:59:56,562 2417   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 986 ms
+2019-02-24 17:00:12,091 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:00:12,143 52     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:00:12 CST 2019]; root of context hierarchy
+2019-02-24 17:00:12,183 92     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:00:12,271 180    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:00:12,299 208    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:00:12,612 521    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:00:12,839 748    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:00:12,863 772    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:00:13,358 1267   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1266 ms
+2019-02-24 17:00:13,444 1353   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:00:13,447 1356   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:00:13 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:00:13,447 1356   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:00:13,581 1490   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:00:13,850 1759   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:00:13,874 1783   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:00:13,878 1787   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:00:13,882 1791   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:00:13,937 1846   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:00:13,938 1847   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:00:13,939 1848   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:00:13,939 1848   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:00:14,243 2152   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:00:13 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:00:14,299 2208   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:00:13 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:00:14,472 2381   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 1028 ms
+2019-02-24 17:01:21,644 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:01:21,679 35     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:01:21 CST 2019]; root of context hierarchy
+2019-02-24 17:01:21,707 63     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:01:21,771 127    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:01:21,798 154    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:01:22,073 429    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:01:22,315 671    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:01:22,355 711    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:01:22,900 1256   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1256 ms
+2019-02-24 17:01:22,979 1335   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:01:22,982 1338   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:01:22 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:01:22,983 1339   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:01:23,117 1473   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:01:24,505 2861   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:01:24,732 3088   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:01:24,822 3178   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:01:24,909 3265   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:01:25,184 3540   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:01:25,193 3549   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:01:25,195 3551   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:01:25,197 3553   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:01:26,531 4887   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:01:22 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:01:26,908 5264   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:01:22 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:01:27,722 6078   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 4743 ms
+2019-02-24 17:01:28,580 6936   [bio-8080-exec-1] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18j0zry1hkcpcv|42582e46, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18j0zry1hkcpcv|42582e46, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 17:02:08,425 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:02:08,463 38     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:02:08 CST 2019]; root of context hierarchy
+2019-02-24 17:02:08,492 67     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:02:08,556 131    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:02:08,580 155    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:02:08,909 484    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:02:09,143 718    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:02:09,169 744    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:02:09,676 1251   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1251 ms
+2019-02-24 17:02:09,742 1317   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:02:09,745 1320   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:02:09 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:02:09,745 1320   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:02:09,877 1452   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:02:11,182 2757   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:02:11,414 2989   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:02:11,500 3075   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:02:11,586 3161   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:02:11,854 3429   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:02:11,863 3438   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:02:11,865 3440   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:02:11,867 3442   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:02:13,189 4764   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:02:09 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:02:13,557 5132   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:02:09 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:02:14,372 5947   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 4630 ms
+2019-02-24 17:02:15,272 6847   [bio-8080-exec-1] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18j1zwoshzq9b|54edd5d0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18j1zwoshzq9b|54edd5d0, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 17:04:15,521 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:04:15,566 45     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:04:15 CST 2019]; root of context hierarchy
+2019-02-24 17:04:15,602 81     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:04:15,678 157    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:04:15,703 182    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:04:16,041 520    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:04:16,278 757    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:04:16,303 782    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:04:16,785 1264   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1263 ms
+2019-02-24 17:04:16,846 1325   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:04:16,848 1327   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:04:16 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:04:16,849 1328   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:04:16,967 1446   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:04:18,166 2645   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:04:18,381 2860   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:04:18,467 2946   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:04:18,552 3031   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:04:18,823 3302   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:04:18,832 3311   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:04:18,834 3313   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:04:18,836 3315   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:04:20,244 4723   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:04:16 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:04:20,626 5105   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:04:16 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:04:21,422 5901   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 4576 ms
+2019-02-24 17:05:39,455 83934  [bio-8080-exec-5] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18j4q07otehoo|34dd426e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18j4q07otehoo|34dd426e, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 17:08:52,013 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:08:52,055 42     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:08:52 CST 2019]; root of context hierarchy
+2019-02-24 17:08:52,085 72     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:08:52,163 150    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:08:52,190 177    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:08:52,484 471    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:08:52,706 693    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:08:52,731 718    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:08:53,305 1292   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1291 ms
+2019-02-24 17:08:53,369 1356   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:08:53,372 1359   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:08:53 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:08:53,372 1359   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:08:53,506 1493   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:08:53,795 1782   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:08:53,821 1808   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:08:53,823 1810   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:08:53,826 1813   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:08:53,880 1867   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:08:53,882 1869   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:08:53,882 1869   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:08:53,883 1870   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:08:54,185 2172   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:08:53 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:08:54,243 2230   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:08:53 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:08:54,379 2366   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 1010 ms
+2019-02-24 17:09:46,969 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:09:47,017 48     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:09:47 CST 2019]; root of context hierarchy
+2019-02-24 17:09:47,058 89     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:09:47,142 173    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:09:47,171 202    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:09:47,467 498    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:09:47,747 778    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:09:47,778 809    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:09:48,413 1444   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1443 ms
+2019-02-24 17:09:48,488 1519   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:09:48,491 1522   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:09:48 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:09:48,491 1522   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:09:48,644 1675   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:09:48,908 1939   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:09:48,934 1965   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:09:48,937 1968   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:09:48,940 1971   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:09:48,993 2024   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:09:48,995 2026   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:09:48,995 2026   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:09:48,995 2026   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:09:49,323 2354   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:09:48 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:09:49,384 2415   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:09:48 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:09:49,531 2562   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 1043 ms
+2019-02-24 17:09:51,686 4717   [bio-8080-exec-1] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18jbtrrhh1mkj|6ef9752d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18jbtrrhh1mkj|6ef9752d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 17:13:38,147 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:13:38,183 36     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:13:38 CST 2019]; root of context hierarchy
+2019-02-24 17:13:38,210 63     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:13:38,276 129    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:13:38,298 151    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:13:38,532 385    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:13:38,726 579    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:13:38,748 601    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:13:39,240 1093   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1092 ms
+2019-02-24 17:13:39,300 1153   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:13:39,302 1155   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:13:39 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:13:39,303 1156   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:13:39,418 1271   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:13:39,660 1513   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:13:39,682 1535   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:13:39,685 1538   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:13:39,688 1541   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:13:39,736 1589   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:13:39,738 1591   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:13:39,739 1592   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:13:39,739 1592   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:13:40,023 1876   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:13:39 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:13:40,071 1924   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:13:39 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:13:40,193 2046   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 893 ms
+2019-02-24 17:15:08,914 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:15:08,960 46     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:15:08 CST 2019]; root of context hierarchy
+2019-02-24 17:15:08,993 79     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:15:09,076 162    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:15:09,104 190    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:15:09,378 464    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:15:09,654 740    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:15:09,678 764    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:15:10,190 1276   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1275 ms
+2019-02-24 17:15:10,249 1335   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:15:10,252 1338   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:15:10 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:15:10,252 1338   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:15:10,386 1472   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:15:10,672 1758   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:15:10,695 1781   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:15:10,698 1784   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:15:10,701 1787   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:15:10,753 1839   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:15:10,755 1841   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:15:10,756 1842   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:15:10,756 1842   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:15:11,072 2158   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:15:10 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:15:11,123 2209   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:15:10 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:15:11,266 2352   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 1017 ms
+2019-02-24 17:15:12,688 3774   [bio-8080-exec-1] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18jiq5i14deymi|77e43f23, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18jiq5i14deymi|77e43f23, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 17:16:56,853 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:16:56,903 50     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:16:56 CST 2019]; root of context hierarchy
+2019-02-24 17:16:56,940 87     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:16:57,019 166    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:16:57,046 193    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:16:57,316 463    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:16:57,574 721    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:16:57,602 749    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:16:58,164 1311   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1310 ms
+2019-02-24 17:16:58,227 1374   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:16:58,229 1376   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:16:58 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:16:58,229 1376   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:16:58,357 1504   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:16:58,612 1759   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:16:58,634 1781   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:16:58,637 1784   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:16:58,640 1787   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:16:58,691 1838   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:16:58,693 1840   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:16:58,693 1840   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:16:58,693 1840   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:16:58,985 2132   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:16:58 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:16:59,035 2182   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:16:58 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:16:59,190 2337   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 963 ms
+2019-02-24 17:17:00,240 3387   [bio-8080-exec-1] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18jl1fckdk6qb|35622fdb, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18jl1fckdk6qb|35622fdb, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 17:20:43,989 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:20:44,030 41     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:20:44 CST 2019]; root of context hierarchy
+2019-02-24 17:20:44,062 73     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:20:44,135 146    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:20:44,159 170    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:20:44,486 497    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:20:44,722 733    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:20:44,747 758    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:20:45,216 1227   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1226 ms
+2019-02-24 17:20:45,282 1293   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:20:45,285 1296   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:20:45 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:20:45,285 1296   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:20:45,406 1417   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:20:45,663 1674   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:20:45,687 1698   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:20:45,690 1701   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:20:45,693 1704   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:20:45,741 1752   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:20:45,743 1754   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:20:45,743 1754   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:20:45,743 1754   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:20:46,035 2046   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:20:45 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:20:46,089 2100   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:20:45 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:20:46,227 2238   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 945 ms
+2019-02-24 17:20:51,853 7864   [bio-8080-exec-1] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18jpwozwivxop|210a9fa3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18jpwozwivxop|210a9fa3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 17:22:17,984 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:22:18,024 40     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:22:18 CST 2019]; root of context hierarchy
+2019-02-24 17:22:18,052 68     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:22:18,114 130    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:22:18,137 153    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:22:18,366 382    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:22:18,579 595    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:22:18,603 619    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:22:19,081 1097   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1095 ms
+2019-02-24 17:22:19,141 1157   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:22:19,143 1159   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:22:19 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:22:19,143 1159   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:22:19,257 1273   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:22:19,503 1519   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:22:19,527 1543   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:22:19,530 1546   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:22:19,533 1549   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:22:19,579 1595   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:22:19,581 1597   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:22:19,582 1598   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:22:19,582 1598   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:22:19,855 1871   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:22:19 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:22:19,903 1919   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:22:19 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:22:20,027 2043   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 886 ms
+2019-02-24 17:22:26,205 8221   [bio-8080-exec-1] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18jrx431p7us32|35622fdb, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18jrx431p7us32|35622fdb, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 17:25:42,898 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:25:42,953 55     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:25:42 CST 2019]; root of context hierarchy
+2019-02-24 17:25:42,996 98     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:25:43,081 183    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:25:43,108 210    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:25:43,413 515    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:25:43,683 785    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:25:43,712 814    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:25:44,316 1418   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1417 ms
+2019-02-24 17:25:44,388 1490   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:25:44,392 1494   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:25:44 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:25:44,392 1494   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:25:44,524 1626   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:25:44,815 1917   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:25:44,844 1946   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:25:44,847 1949   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:25:44,850 1952   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:25:44,907 2009   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:25:44,909 2011   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:25:44,909 2011   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:25:44,909 2011   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:25:45,185 2287   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:25:44 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:25:45,243 2345   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:25:44 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:25:45,386 2488   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 997 ms
+2019-02-24 17:25:59,967 17069  [bio-8080-exec-1] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18jwbdi1ppun7s|3cf8af6d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18jwbdi1ppun7s|3cf8af6d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2019-02-24 17:29:07,398 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:29:07,442 44     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:29:07 CST 2019]; root of context hierarchy
+2019-02-24 17:29:07,478 80     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:29:07,557 159    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:29:07,583 185    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:29:07,879 481    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:29:08,145 747    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:29:08,173 775    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:29:08,351 953    [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 42; columnNumber: 17; 元素类型为 "configuration" 的内容必须匹配 "(properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,objectWrapperFactory?,reflectorFactory?,plugins?,environments?,databaseIdProvider?,mappers?)"。
+2019-02-24 17:29:08,353 955    [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 42; columnNumber: 17; 元素类型为 "configuration" 的内容必须匹配 "(properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,objectWrapperFactory?,reflectorFactory?,plugins?,environments?,databaseIdProvider?,mappers?)"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 42; columnNumber: 17; 元素类型为 "configuration" 的内容必须匹配 "(properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,objectWrapperFactory?,reflectorFactory?,plugins?,environments?,databaseIdProvider?,mappers?)"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.<init>(XMLConfigBuilder.java:82)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:407)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	... 22 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 42; columnNumber: 17; 元素类型为 "configuration" 的内容必须匹配 "(properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,objectWrapperFactory?,reflectorFactory?,plugins?,environments?,databaseIdProvider?,mappers?)"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 28 more
+2019-02-24 17:30:58,813 1      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2019-02-24 17:30:58,853 41     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sun Feb 24 17:30:58 CST 2019]; root of context hierarchy
+2019-02-24 17:30:58,881 69     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-controller.xml]
+2019-02-24 17:30:58,948 136    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-service.xml]
+2019-02-24 17:30:58,972 160    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-02-24 17:30:59,195 383    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:30:59,392 580    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2019-02-24 17:30:59,417 605    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2019-02-24 17:30:59,928 1116   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1115 ms
+2019-02-24 17:30:59,986 1174   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-24 17:30:59,990 1178   [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:30:59 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:30:59,990 1178   [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springmvc.xml]
+2019-02-24 17:31:00,113 1301   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-24 17:31:00,361 1549   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-02-24 17:31:00,381 1569   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/img/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2019-02-24 17:31:00,383 1571   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2019-02-24 17:31:00,386 1574   [ost-startStop-1] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/plugins/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2019-02-24 17:31:00,427 1615   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/order/findAllByPage]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.OrderController.findAllByPage(int,int)
+2019-02-24 17:31:00,429 1617   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/toAdd]}" onto public java.lang.String cn.itcast.controller.ProductController.toAdd()
+2019-02-24 17:31:00,429 1617   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/save]}" onto public java.lang.String cn.itcast.controller.ProductController.saveProduct(cn.itcast.domain.Product)
+2019-02-24 17:31:00,429 1617   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/product/findAll]}" onto public org.springframework.web.servlet.ModelAndView cn.itcast.controller.ProductController.findAll()
+2019-02-24 17:31:00,711 1899   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:30:59 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:31:00,757 1945   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sun Feb 24 17:30:59 CST 2019]; parent: Root WebApplicationContext
+2019-02-24 17:31:00,879 2067   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 892 ms
+2019-02-24 17:31:07,532 8720   [bio-8080-exec-1] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge7epa18k32z51wcecgb|1ec0a951, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge7epa18k32z51wcecgb|1ec0a951, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.12.222:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]

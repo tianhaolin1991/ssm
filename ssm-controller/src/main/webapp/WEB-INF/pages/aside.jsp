@@ -89,13 +89,13 @@
                 <ul class="treeview-menu">
 
                     <li>
-                        <a href="all-elements-general.html">
+                        <a href="${pageContext.request.contextPath}/product/findAll">
                             <i class="fa fa-circle-o"></i> 商品管理
                         </a>
                     </li>
 
                     <li>
-                        <a href="${pageContext.request.contextPath}/product/findAll">
+                        <a href="${pageContext.request.contextPath}/order/findAllByPage?currentPage=1&pageSize=5">
                             <i class="fa fa-circle-o"></i> 订单管理
                         </a>
                     </li>
