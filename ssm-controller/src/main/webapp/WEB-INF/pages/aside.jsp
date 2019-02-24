@@ -95,7 +95,7 @@
                     </li>
 
                     <li>
-                        <a href="all-elements-icons.html">
+                        <a href="${pageContext.request.contextPath}/product/findAll">
                             <i class="fa fa-circle-o"></i> 订单管理
                         </a>
                     </li>

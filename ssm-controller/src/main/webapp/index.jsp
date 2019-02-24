@@ -81,7 +81,7 @@
                     <small>首页</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="all-admin-index.html"><i class="fa fa-dashboard"></i> 首页</a></li>
+                    <li><a href="${pageContext.request.contextPath}/index.jsp"><i class="fa fa-dashboard"></i> 首页</a></li>
                 </ol>
             </section>
             <!-- 内容头部 /-->
