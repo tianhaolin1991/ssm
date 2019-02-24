@@ -10,4 +10,9 @@ public interface ProductService {
      * 从商品库中查询所有
      */
     List<Product> findAll();
+
+    /**
+     *
+     */
+    void save(Product product);
 }

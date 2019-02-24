@@ -195,7 +195,7 @@
 								<div class="form-group form-inline">
 									<div class="btn-group">
 										<button type="button" class="btn btn-default" title="新建"
-											onclick="location.href='${pageContext.request.contextPath}/pages/product-add.jsp'">
+											onclick="location.href='${pageContext.request.contextPath}/product/toAdd'">
 											<i class="fa fa-file-o"></i> 新建
 										</button>
 										<button type="button" class="btn btn-default" title="删除">
@@ -242,9 +242,7 @@
 									</tr>
 								</thead>
 								<tbody>
-
-
-									<c:forEach items="${productList}" var="product">
+									<c:forEach items="${products}" var="product">
 
 										<tr>
 											<td><input name="ids" type="checkbox"></td>

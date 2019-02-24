@@ -25,17 +25,17 @@ public class ProductController {
             System.out.println(product);
         }
         modelAndView.addObject("products",products);
-        modelAndView.setViewName("success");
+        modelAndView.setViewName("product-list");
         return modelAndView;
     }
 
-    @RequestMapping("/error")
-    public String errorTest() throws SysException{
-        try{
-            int i = 1/0;
-            return "success";
-        }catch (Exception e){
-            throw new SysException("数学计算异常");
-        }
+    @RequestMapping("/toAdd")
+    public String toAdd(){
+        return "product-add";
+    }
+    @RequestMapping("/save")
+    public String saveProduct(Product product){
+        productService.save(product);
+        return "forward:/product/findAll";
     }
 }

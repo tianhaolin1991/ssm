@@ -1,6 +1,7 @@
 package cn.itcast.dao;
 
 import cn.itcast.domain.Product;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
@@ -11,4 +12,6 @@ public interface ProductDao {
 
     @Select("SELECT * FROM PRODUCT")
     List<Product> findAll();
+
+    void save(Product product);
 }
