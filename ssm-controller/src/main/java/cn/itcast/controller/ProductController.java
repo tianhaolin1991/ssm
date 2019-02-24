@@ -1,6 +1,7 @@
 package cn.itcast.controller;
 
 import cn.itcast.domain.Product;
+import cn.itcast.exception.SysException;
 import cn.itcast.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,7 +24,18 @@ public class ProductController {
         for (Product product : products) {
             System.out.println(product);
         }
+        modelAndView.addObject("products",products);
         modelAndView.setViewName("success");
         return modelAndView;
+    }
+
+    @RequestMapping("/error")
+    public String errorTest() throws SysException{
+        try{
+            int i = 1/0;
+            return "success";
+        }catch (Exception e){
+            throw new SysException("数学计算异常");
+        }
     }
 }

@@ -15,7 +15,7 @@ public class WebTest {
     private ProductService productService;
 
     @Test
-    public void test03(){
+    public void test03() {
         List<Product> products = productService.findAll();
         for (Product product : products) {
             System.out.println(product);
